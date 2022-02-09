@@ -1,3 +1,7 @@
-export function Display() {
-  return <span className="message">Calling...</span>;
+export function Display({ placeCall }) {
+  return (
+    <span className="message">
+      {placeCall ? 'Calling....' : 'Enter number'}
+    </span>
+  );
 }
